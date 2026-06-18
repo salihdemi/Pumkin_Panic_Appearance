@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1623694830184325449}
   - component: {fileID: 183974897953299665}
   m_Layer: 0
-  m_Name: Environment_Object_Main_Pumkin
+  m_Name: Environment_Object_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

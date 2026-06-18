@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4194869395218795512}
   - component: {fileID: 843904674009252002}
   m_Layer: 0
-  m_Name: Pumkin_Panic_Character
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,4 +180,4 @@ CapsuleCollider:
   m_Radius: 0.06
   m_Height: 0.32
   m_Direction: 1
-  m_Center: {x: 0, y: 0.16, z: 0.05}
+  m_Center: {x: 0, y: 0.16, z: 0}

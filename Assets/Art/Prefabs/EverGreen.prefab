@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 183974897953299665, guid: 9bc1392f13071f1478d8d17e11b4cd87, type: 3}
+      propertyPath: m_Radius
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 1623694830184325449, guid: 9bc1392f13071f1478d8d17e11b4cd87, type: 3}
       propertyPath: m_Size.x
       value: 0.534
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053571460883314182, guid: 9bc1392f13071f1478d8d17e11b4cd87, type: 3}
       propertyPath: m_Name
-      value: EverGree_Pumkin
+      value: EverGreen
       objectReference: {fileID: 0}
     - target: {fileID: 7912326856823783435, guid: 9bc1392f13071f1478d8d17e11b4cd87, type: 3}
       propertyPath: m_LocalPosition.x
