@@ -8868,6 +8868,7 @@ GameObject:
   - component: {fileID: 1966499914}
   - component: {fileID: 1966499913}
   - component: {fileID: 1966499912}
+  - component: {fileID: 1966499916}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -9030,6 +9031,8 @@ GameObject:
   - component: {fileID: 2096823107}
   - component: {fileID: 2096823105}
   - component: {fileID: 2096823106}
+  - component: {fileID: 2096823110}
+  - component: {fileID: 2096823111}
   m_Layer: 0
   m_Name: Lamb
   m_TagString: Untagged
@@ -9343,6 +9346,73 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda17b3a5179c1e458b09c16a4dd8911, type: 3}
+--- !u!114 &1966499916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966499911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  SignalCombinationMode: 0
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+--- !u!114 &2096823110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096823101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a1b2c3d4e5f60718293a4b5c6d7e8f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  hitStopDuration: 0.06
+  hitStopScale: 0.05
+  shakeForce: 0.35
+  whiffShakeForce: 0.07
+  impulseDuration: 0.25
+  listenerGain: 1
+  fovPunch: 5
+  fovPunchDuration: 0.22
+  postPulseStrength: 0.85
+  postPulseDuration: 0.28
+  flashIntensity: 12
+  flashRange: 4
+  flashDuration: 0.14
+  flashColor: {r: 1, g: 0.92, b: 0.7, a: 1}
+  sparkCount: 22
+  dustCount: 8
+  sparkColor: {r: 1, g: 0.85, b: 0.45, a: 1}
+  playSound: 1
+  hitVolume: 0.7
+  whiffVolume: 0.25
+--- !u!114 &2096823111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096823101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
