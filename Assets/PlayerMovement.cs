@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PumkinPlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public Animator anim;
