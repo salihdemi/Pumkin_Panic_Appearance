@@ -1,18 +1,20 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
+
     public InputActionAsset InputActions;
+    private InputActionMap actionMap;
+    private InputAction attack;
 
     // Raycast'in ne kadar uzağa gideceğini belirleyen menzil
     public float attackRange = 50f;
     // Sadece düşmanları vurmak için Unity'de seçeceğin Layer
     public LayerMask enemyLayer;
 
-    private InputActionMap actionMap;
-    private InputAction attack;
 
     private void Awake()
     {
@@ -65,7 +67,6 @@ public class PlayerAttack : MonoBehaviour
                 enemy.GetHit(); // Düşmandaki fonksiyonu çalıştır
             }
         }
-
         // Animasyonu oynat
         if (animator != null)
         {
