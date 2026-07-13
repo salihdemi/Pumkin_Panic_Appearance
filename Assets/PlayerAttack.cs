@@ -66,7 +66,6 @@ public class PlayerAttack : MonoBehaviour
                 {
                     Debug.Log("Düşman menzil içinde ve vuruldu: " + hit.collider.name);
                     enemy.GetHit();
-                    enemy.GetComponent<JuicyEffect>().TriggerDefaultSquashStretch();
                 }
             }
             else

@@ -8147,7 +8147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 202557083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0989cc2c8ddc0e4b8bdf99bc4eb630a, type: 3}
+  m_Script: {fileID: 11500000, guid: 78160600332728349af7b485e719cdd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JuicyEffect
   squashCurve:
@@ -8155,27 +8155,27 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: -0.00039872527
-      inSlope: 1.9993994
-      outSlope: 1.9993994
+      value: 0.0009384155
+      inSlope: 1.9973817
+      outSlope: 1.9973817
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.50034964
+      time: 0.5001856
       value: 1
-      inSlope: -0.0004118681
-      outSlope: -0.0004118681
+      inSlope: -0.0007417202
+      outSlope: -0.0007417202
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0.0005877912
-      inSlope: -2.0002232
-      outSlope: -2.0002232
+      value: 0.0009384155
+      inSlope: -1.9988651
+      outSlope: -1.9988651
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -8184,8 +8184,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration: 0.2
-  DefaultStrengthX: 1
-  DefaultStrengthY: -0.7
+  DefaultStrengthX: 0.2
+  DefaultStrengthY: 0.1
 --- !u!114 &202557085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8692,6 +8692,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1807238585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &932126302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932126304}
+  - component: {fileID: 932126303}
+  m_Layer: 0
+  m_Name: HitStopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &932126303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932126302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f304898394f620b479d70f63d3e13c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitStopManager
+  defaultHitStopDuration: 0.1
+--- !u!4 &932126304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932126302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.34772, y: -1.77689, z: 4.493}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1065662396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8583902794492500107, guid: c681970945548d24ea27a42b3ced2cd6, type: 3}
@@ -8852,16 +8897,18 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Screen Shake-----------
 
-    Squash and Stretch
+    Squash and Stretch ------------
 
-    Hit Stop / Freeze
-    Frame
+    Hit
+    Stop / Freeze Frame---------
 
     Particle Systems
 
     Flashing & UI
 
-    SFX'
+    SFX
+
+    Animasyon'
 --- !u!222 &1363906124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9545,3 +9592,4 @@ SceneRoots:
   - {fileID: 2096823103}
   - {fileID: 1363906125}
   - {fileID: 202557089}
+  - {fileID: 932126304}
