@@ -8131,6 +8131,7 @@ GameObject:
   - component: {fileID: 202557086}
   - component: {fileID: 202557085}
   - component: {fileID: 202557084}
+  - component: {fileID: 202557090}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -8184,8 +8185,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration: 0.2
-  DefaultStrengthX: 0.2
-  DefaultStrengthY: 0.1
+  DefaultStrengthX: 1
+  DefaultStrengthY: -0.5
 --- !u!114 &202557085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8298,7 +8299,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: e2eaa857e789f1748ab12c23b93429ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8321,7 +8322,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1886226778, guid: 5b3980c61f56ae2459bd22aa9ccd17a6, type: 3}
+  m_Sprite: {fileID: 313833365, guid: c883646dd68dd2240b170bd96f45c5e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8346,6 +8347,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202557090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202557083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ef286b549dfdf499139512869a4513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitFlash
+  flashDuration: 0.1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,13 +8916,14 @@ MonoBehaviour:
     Hit
     Stop / Freeze Frame---------
 
-    Particle Systems
-
     Flashing & UI
 
-    SFX
+    Animasyon
 
-    Animasyon'
+    Particle
+    Systems
+
+    SFX'
 --- !u!222 &1363906124
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     {
         GetComponent<CinemachineImpulseSource>().GenerateImpulse();//cameraShake
         GetComponent<SquashStrech>().TriggerDefaultSquashStretch();//SquashStrech
+        GetComponent<HitFlash>().Flash();
         HitStopManager.Instance.TriggerDefaultHitStop();//HitStop
 
         Debug.Log(gameObject.name + " has been hit!");
